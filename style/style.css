@@ -1,0 +1,54 @@
+body{
+
+    font-size: 16px;
+    /*font-family: Arial;*/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.inpTxt{
+
+    font-style: normal;
+    font-size: 16px;
+    border: 1px;
+    border-style: solid;
+    border-bottom-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    /*border-left-color: deepskyblue;*/
+    border-left-color: transparent;
+    border-bottom-color: deepskyblue;
+    outline: none;
+
+    transition: border-left-color ease-out .5s,
+                border-bottom-color ease-out .5s,
+                border-top-color ease-out .5s,
+                border-right-color ease-out .5s,
+                border-style ease-out 1s;
+
+    -webkit-transition: border-left-color ease-out .5s,
+                        border-bottom-color ease-out .5s,
+                        border-top-color ease-out .5s,
+                        border-right-color ease-out .5s,
+                        border-style ease-out 1s;
+
+    -moz-transition:    border-left-color ease-out .5s,
+                        border-bottom-color ease-out .5s,
+                        border-top-color ease-out .5s,
+                        border-right-color ease-out .5s,
+                        border-style ease-out 1s;
+
+}
+
+.inpTxt:focus{
+
+    border-left-color: deeppink;
+    /*border-bottom-color: deeppink;*/
+    border-top-color: deeppink;
+    border-right-color: deeppink;
+    border-style: solid  ;
+    border-bottom-style: solid;
+
+}
+
+
