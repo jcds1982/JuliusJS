@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.mailslot__main_container{
+    display: block;
+    width: 400px;
+    height: 150px;
+    color: rgb(255,255,255);
+    position: relative;
+    
+    
+}
+
+.mailslot__flipper_container{
+    display: block;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.mailslot__flipper_container__Inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+
+}
+
+.mailslot__flipper_front{
+
+    border-top: 5px solid #505050;
+    background-color: rgb(218, 218, 218);
+    transition: all 300ms;
+    transform-origin: 0% 0%;  /* Flip from top */
+    /* transform-origin: 0% 100%;*/ /* Flip from bottom */
+    z-index: 2;
+    padding: 10px;
+    /* height: 65px; */
+    box-shadow: 0px 2px 5px #5a5a5a;
+    color: #505050;
+}
+
+.mailslot__flipper_front_backface{
+    background-color: red;
+    color: black;
+}
+
+/* .mailslot__flipper_front:hover{
+    transform:  scale(1.02,1.02);
+    transition: all 300ms ease-out;
+} */
+
+/* .mailslot__flipper_front:active{
+    transform: rotateX(100deg) translateY(0px); 
+    transition: all 200ms;
+    box-shadow: 0px 0px 0px #5a5a5a;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: transparent;
+} */
+
+.mailslot__flipper_back{
+    background-color: rgb(40, 40, 40); 
+    padding: 10px;
+    transition: all 300ms;
+    
+}
+
+/* .mailslot__flipper_front:active ~.mailslot__flipper_back{
+    height: 300px;
+    transition: all 300ms;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+} */
+
+
+.mailslot__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 50px;
+    perspective: 1000px;
+
+}
+
+
+
+.mailslot__flip_hold{
+    transform: rotateX(100deg) translateY(0px); /* Rotate from top */
+    /* transform: rotateX(-130deg) translateY(0px); */ /* Rotate from bottom*/
+    transition: all 200ms;
+    box-shadow: 0px 0px 0px #5a5a5a;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: transparent;
+    background: #676862;
+}
+
+.mailslot__expand_innercard{
+    height: 300px;
+    transition: all 300ms;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
